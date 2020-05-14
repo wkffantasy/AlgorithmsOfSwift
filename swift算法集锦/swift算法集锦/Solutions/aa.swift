@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class AA {
+    let a = 10 ,b = 11
+    
+}
