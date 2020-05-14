@@ -16,6 +16,8 @@
 		4BFF7955246A23D50045880D /* swift____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7954246A23D50045880D /* swift____Tests.swift */; };
 		4BFF7960246A23D50045880D /* swift____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF795F246A23D50045880D /* swift____UITests.swift */; };
 		4BFF7972246A25DF0045880D /* Solutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7971246A25DF0045880D /* Solutions.swift */; };
+		4BFF7975246B78F00045880D /* aa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7974246B78F00045880D /* aa.swift */; };
+		4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		4BFF795F246A23D50045880D /* swift____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift____UITests.swift"; sourceTree = "<group>"; };
 		4BFF7961246A23D50045880D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFF7971246A25DF0045880D /* Solutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solutions.swift; sourceTree = "<group>"; };
+		4BFF7974246B78F00045880D /* aa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aa.swift; sourceTree = "<group>"; };
+		4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionMaxLengthOfString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		4BFF793B246A23D30045880D /* swift算法集锦 */ = {
 			isa = PBXGroup;
 			children = (
+				4BFF7973246B78C90045880D /* Solutions */,
 				4BFF793C246A23D30045880D /* AppDelegate.swift */,
 				4BFF793E246A23D30045880D /* ViewController.swift */,
 				4BFF7940246A23D30045880D /* Main.storyboard */,
@@ -129,6 +134,15 @@
 				4BFF7961246A23D50045880D /* Info.plist */,
 			);
 			path = "swift算法集锦UITests";
+			sourceTree = "<group>";
+		};
+		4BFF7973246B78C90045880D /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				4BFF7974246B78F00045880D /* aa.swift */,
+				4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */,
+			);
+			path = Solutions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFF793F246A23D30045880D /* ViewController.swift in Sources */,
+				4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */,
 				4BFF7945246A23D30045880D /* swift____.xcdatamodeld in Sources */,
+				4BFF7975246B78F00045880D /* aa.swift in Sources */,
 				4BFF7972246A25DF0045880D /* Solutions.swift in Sources */,
 				4BFF793D246A23D30045880D /* AppDelegate.swift in Sources */,
 			);
