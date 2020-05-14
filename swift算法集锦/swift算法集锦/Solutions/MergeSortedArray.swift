@@ -15,13 +15,16 @@
  输入:
  nums1 = [1,2,3,0,0,0], m = 3
  nums2 = [2,5,6],       n = 3
+ 
  输出: [1,2,2,3,5,6]
  */
 
 import Foundation
 
 class MergeSortedArray {
+    
     func merge(_ nums1:[Int], _ m:Int, _ nums2:[Int], _ n:Int) -> [Int] {
+        
         var result = [Int](nums1)
         print("result == \(result)")
         for (i,thisnum) in nums2.enumerated() {
@@ -29,15 +32,16 @@ class MergeSortedArray {
             for renum in result.reversed() {
                 print("renum== \(renum)")
                 if renum == 0 {
-                    result.remove(at: result.)
-                    print("result == \(result) j == \(j)")
-                    break;
+                    result.remove(at: result.lastIndex(of: renum)!)
+                    print("result == \(result)")
+                    continue;
                 }
-                if result[j] <= thisnum {
-                    result.insert(thisnum,at:j)
+                if renum <= thisnum {
+                    result.insert(thisnum,at:result.lastIndex(of: renum)!-1)
                     break
                 }
             }
+            print("result == \(result)")
         }
         return result
     }

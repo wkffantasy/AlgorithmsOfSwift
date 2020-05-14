@@ -26,10 +26,6 @@ class ViewController: UIViewController {
 //        let s = so.solution1("abcabcbb")
 //        print("无重复的最大子串的长度 s == \(s)")
         
-        let a = [1,2,3,4,5]
-        for i in a.reversed() {
-            print("i == \(i)")
-        }
         // 合并有序的数组
         let m1 = MergeSortedArray.init().merge([1,2,3,0,0,0], 3, [2,5,6], 3)
         print("合并有序的数组 m1 == \(m1)")
