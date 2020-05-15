@@ -27,7 +27,8 @@ class ViewController: UIViewController {
 //        print("无重复的最大子串的长度 s == \(s)")
         
         // 合并有序的数组
-        let m1 = MergeSortedArray.init().merge([1,2,3,0,0,0], 3, [2,5,6], 3)
+        var nums1 = [1,2,5,7,9,0,0,0]
+        let m1 = MergeSortedArray.init().merge(nums1: &nums1, 5, [1,3,4,5,8,10], 6)
         print("合并有序的数组 m1 == \(m1)")
     }
 }

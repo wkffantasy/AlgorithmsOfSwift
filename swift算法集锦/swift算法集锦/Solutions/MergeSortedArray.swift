@@ -16,6 +16,8 @@
  nums1 = [1,2,3,0,0,0], m = 3
  nums2 = [2,5,6],       n = 3
  
+ 1，2，3
+ 2 5，6
  输出: [1,2,2,3,5,6]
  */
 
@@ -23,27 +25,26 @@ import Foundation
 
 class MergeSortedArray {
     
-    func merge(_ nums1:[Int], _ m:Int, _ nums2:[Int], _ n:Int) -> [Int] {
+    func merge( nums1:inout [Int], _ m:Int, _ nums2:[Int], _ n:Int) -> [Int] {
+        print("nums1 == \(nums1) \nnums2 = \(nums2)")
         
-        var result = [Int](nums1)
-        print("result == \(result)")
-        for (i,thisnum) in nums2.enumerated() {
-            print("i == \(i) thisnum == \(thisnum)")
-            for renum in result.reversed() {
-                print("renum== \(renum)")
+        for thisnum in nums2 {
+            for renum in nums1.reversed() {
                 if renum == 0 {
-                    result.remove(at: result.lastIndex(of: renum)!)
-                    print("result == \(result)")
-                    continue;
+                    nums1.remove(at: nums1.lastIndex(of: renum)!)
+                    continue
                 }
                 if renum <= thisnum {
-                    result.insert(thisnum,at:result.lastIndex(of: renum)!-1)
+                    if nums1.last == renum {
+                        nums1.append(thisnum)
+                    } else {
+                        nums1.insert(thisnum, at: nums1.firstIndex(of: renum)! + 1)
+                    }
                     break
                 }
             }
-            print("result == \(result)")
         }
-        return result
+        return nums1
     }
 
 }
