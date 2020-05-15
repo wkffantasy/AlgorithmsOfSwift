@@ -8,8 +8,6 @@
 
 import Foundation
 class Solutions {
-    var start = 0
-    var maxLen = 0
     /*
      1 两数只和
      给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
@@ -43,32 +41,34 @@ class Solutions {
      输入: "cbbd"
      输出: "bb"
      */
-    private func longestHelp(_ s:String, _ low:Int, _ high:Int) {
+    private func longestHelp(_ s:String, _ low:Int, _ high:Int) -> Int {
         var thisLow = low
         var thisHigh = high
-        var chars = [Character](s)
+        let chars = [Character](s)
         while (thisLow >= 0 && thisHigh < s.count && chars[thisLow] == chars[thisHigh]) {
-            if thisHigh - thisLow + 1 > maxLen {
-                maxLen = thisHigh - thisLow + 1
-                start = thisLow
-            }
             thisLow -= 1
             thisHigh += 1
         }
+        return thisHigh - thisLow - 1
     }
     func longestPalindrome(_ s:String) -> String {
-        start = 0
-        maxLen = 1
+        var start :Int = 0     //记录起始位置
+        var maxLength :Int = 1 //记录最长回文位置
         guard s.count > 1 else {
             return s
         }
-        var chars = [Character](s)
+        let chars = [Character](s)
         //中心扩散，，单核 和 双核 因为回文可能是奇数，也可能是偶数
-        for i in 0..<s.count-1 {
-            longestHelp(s, i-1, i+1)//单核回文
-            longestHelp(s, i, i+1)//双核回文
+        for i in 0..<s.count {
+           let length1 = longestHelp(s, i, i)//单核回文
+           let length2 = longestHelp(s, i, i+1)//双核回文
+           let tempMaxLength = max(length1, length2)
+           if tempMaxLength > maxLength {
+               maxLength = tempMaxLength
+               start = i - (maxLength - 1 ) / 2
+           }
         }
-        return  String(chars[start...maxLen+start-1])
+        return  String(chars[start...maxLength-1])
         
 //        guard s.characters.count > 1 else {
 //            return s
