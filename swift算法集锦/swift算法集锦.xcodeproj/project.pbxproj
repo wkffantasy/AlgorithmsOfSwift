@@ -19,6 +19,7 @@
 		4BFF7975246B78F00045880D /* aa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7974246B78F00045880D /* aa.swift */; };
 		4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */; };
 		4BFF79F3246CD0560045880D /* MergeSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF79F2246CD0560045880D /* MergeSortedArray.swift */; };
+		9ABB2EDC2470C5BB00D81A8D /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4BFF7974246B78F00045880D /* aa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aa.swift; sourceTree = "<group>"; };
 		4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionMaxLengthOfString.swift; sourceTree = "<group>"; };
 		4BFF79F2246CD0560045880D /* MergeSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedArray.swift; sourceTree = "<group>"; };
+		9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindrome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				4BFF7974246B78F00045880D /* aa.swift */,
 				4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */,
 				4BFF79F2246CD0560045880D /* MergeSortedArray.swift */,
+				9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFF793F246A23D30045880D /* ViewController.swift in Sources */,
+				9ABB2EDC2470C5BB00D81A8D /* LongestPalindrome.swift in Sources */,
 				4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */,
 				4BFF79F3246CD0560045880D /* MergeSortedArray.swift in Sources */,
 				4BFF7945246A23D30045880D /* swift____.xcdatamodeld in Sources */,
