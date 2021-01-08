@@ -16,9 +16,9 @@
 		4BFF7955246A23D50045880D /* swift____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7954246A23D50045880D /* swift____Tests.swift */; };
 		4BFF7960246A23D50045880D /* swift____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF795F246A23D50045880D /* swift____UITests.swift */; };
 		4BFF7972246A25DF0045880D /* Solutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7971246A25DF0045880D /* Solutions.swift */; };
-		4BFF7975246B78F00045880D /* aa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7974246B78F00045880D /* aa.swift */; };
 		4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */; };
 		4BFF79F3246CD0560045880D /* MergeSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF79F2246CD0560045880D /* MergeSortedArray.swift */; };
+		9A9AFB1B25A7EEF500D501A6 /* TwoNumberSumToTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AFB1A25A7EEF500D501A6 /* TwoNumberSumToTarget.swift */; };
 		9ABB2EDC2470C5BB00D81A8D /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +55,9 @@
 		4BFF795F246A23D50045880D /* swift____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift____UITests.swift"; sourceTree = "<group>"; };
 		4BFF7961246A23D50045880D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFF7971246A25DF0045880D /* Solutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solutions.swift; sourceTree = "<group>"; };
-		4BFF7974246B78F00045880D /* aa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aa.swift; sourceTree = "<group>"; };
 		4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionMaxLengthOfString.swift; sourceTree = "<group>"; };
 		4BFF79F2246CD0560045880D /* MergeSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedArray.swift; sourceTree = "<group>"; };
+		9A9AFB1A25A7EEF500D501A6 /* TwoNumberSumToTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoNumberSumToTarget.swift; sourceTree = "<group>"; };
 		9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindrome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,10 +143,10 @@
 		4BFF7973246B78C90045880D /* Solutions */ = {
 			isa = PBXGroup;
 			children = (
-				4BFF7974246B78F00045880D /* aa.swift */,
 				4BFF7976246B79410045880D /* SolutionMaxLengthOfString.swift */,
 				4BFF79F2246CD0560045880D /* MergeSortedArray.swift */,
 				9ABB2EDB2470C5BB00D81A8D /* LongestPalindrome.swift */,
+				9A9AFB1A25A7EEF500D501A6 /* TwoNumberSumToTarget.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -287,9 +287,9 @@
 				4BFF7977246B79410045880D /* SolutionMaxLengthOfString.swift in Sources */,
 				4BFF79F3246CD0560045880D /* MergeSortedArray.swift in Sources */,
 				4BFF7945246A23D30045880D /* swift____.xcdatamodeld in Sources */,
-				4BFF7975246B78F00045880D /* aa.swift in Sources */,
 				4BFF7972246A25DF0045880D /* Solutions.swift in Sources */,
 				4BFF793D246A23D30045880D /* AppDelegate.swift in Sources */,
+				9A9AFB1B25A7EEF500D501A6 /* TwoNumberSumToTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

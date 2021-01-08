@@ -12,12 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 两数之和
-//        let a = so.twoNumsSum([1,2,11,15,111,7], 9)
-//        print(a)
+        let a = TwoNumberSumToTarget.solution(array: [2, 6,4,11,44], target: 55)
+        print("a == \(a)")
         
         //最大的回文数
-        let s = Solutions.init().longestPalindrome("dbba")
-        print("s == ", s)
+//        let s = Solutions.init().longestPalindrome("dbba")
+//        print("s == ", s)
         
         //无重复的最大子串的长度
 //        let s = so.solution1("abcabcbb")
