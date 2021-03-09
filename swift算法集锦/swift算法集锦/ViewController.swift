@@ -12,8 +12,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 两数之和
-        let a = TwoNumberSumToTarget.solution(array: [2, 6,4,11,44], target: 55)
-        print("a == \(a)")
+//        let a = TwoNumberSumToTarget.solution(array: [2, 6,4,11,44], target: 55)
+//        print("a == \(a)")
+        // 移除有序数组重复的数据
+//        var nums: Array<Int> = [1, 1, 2]
+        var nums: Array<Int> = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+        RemoveRepeatedSortedNumber.removeIt2(nums: &nums)
+        print("nums == \(nums)")
+        
         
         //最大的回文数
 //        let s = Solutions.init().longestPalindrome("dbba")
